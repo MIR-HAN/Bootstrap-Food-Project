@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #E74739;
+    border-radius: 10px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* Navbar*/
+#navbar {
+    background: transparent;
+    padding: 0px 9% 0px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+#navbar.scrolled {
+    background-color: #ffffff;
+}
+
+#logo img {
+    width: 190px;
+    padding: 0px 9% 0px;
+}
+
+form {
+    padding-left: 450px;
+}
+
+#btn {
+    margin-left: 15px;
+}
+
+.nav-item .nav-link {
+    transition: all 0.5s;
+    margin-left: 30px;
+}
+
+.nav-item .nav-link:hover {
+    color: #E74739 !important;
+
+}
+
+/* Home*/
+.home {
+    padding: 5px 11% 80px;
+}
+
+.home .img {
+    flex: 1 1 300px;
+    margin-top: 60px;
+}
+
+.home .img img {
+    margin-left: 60px;
+
+}
+
+.home-content {
+    flex: 1 1 400px;
+    margin-top: 30px;
+}
+
+.home-content h3 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* Medium Screens */
+@media (max-width:1024px) {
+    .home .img img {
+        margin-left: 45px;
+    }
+
+    #navbar {
+        background: transparent;
+        padding: 0px 0px 0px;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        transition: all 0.3s;
+    }
+
+    #logo img {
+        width: 190px;
+        padding: 0px 0px 0px;
+        margin-left: 145px;
+    }
+
+    form {
+        padding-left: 0px;
+    }
+
+}
+
+/* Small Screns */
+@media (max-width:576px) {
+    #logo img {
+        width: 190px;
+        margin-right: 190px;
+        margin-left: 0;
+    }
+
+    .nav-item .nav-link {
+        transition: all 0.5s;
+        margin-left: 30px;
+        background-color: #ffffff;
+        padding: 20px;
+    }
+
+    .home-content {
+        flex: 1 1 400px;
+        margin-top: 50px;
+    }
+}
+
+/* Top-Section */
+.top-section {
+    padding: 10px 11% 100px;
+}
+
+.top-section h5 {
+    color: #E74739;
+
+}
+
+.top-section .row .card img {
+    width: 200px;
+}
+
+/* Our-Menu */
+.menu {
+    padding: 100px 11% 100px;
+}
+
+/* Order */
+.order {
+    padding: 10px 11% 100px;
+}
+
+.order textarea {
+    resize: none;
+}
+
+/* Reviews */
+
+.review {
+    padding: 10px 11% 100px;
+}
+
+/* Contact */
+.contact {
+    padding: 100px 11% 100px;
+}
+
+.contact textarea {
+    resize: none;
+}
+
+/* Footer */
+.footer {
+    padding: 100px 11% 70px;
+}
+
+footer img {
+    width: 250px;
+}
+
+.f-content {
+    cursor: pointer;
+}
+
+.f-content i {
+    transition: all 0.3s;
+}
+
+.f-content i:hover {
+    background: #E74739;
+    color: white;
+}
